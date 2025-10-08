@@ -1,7 +1,7 @@
 // js/content-loader.js
 
 // Configuración
-const JSON_PATH = 'json/lastest.json';
+const JSON_PATH = 'files/json/lastest.json';
 
 // Mapeo de íconos SVG
 const ICONS = {
