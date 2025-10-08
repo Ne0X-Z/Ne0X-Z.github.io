@@ -2,7 +2,7 @@
   "writeups": [
     {
       "id": 1,
-      "title": "HackTheBox - JEJE",
+      "title": "HackTheBox - Imagery",
       "description": "Análisis completo de vectores de ataque, enumeración de servicios, explotación de vulnerabilidades web y técnicas de escalada de privilegios en sistemas Linux.",
       "icon": "box",
       "tags": ["Linux", "Medium", "Web Security"],
