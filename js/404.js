@@ -9,15 +9,26 @@ const chars = '01アイウエオカキクケコサシスセソタチツテトナ
 const fontSize = 14;
 const columns = canvas.width / fontSize;
 const drops = Array(Math.floor(columns)).fill(1);
+const brightness = Array(Math.floor(columns)).fill(1);
 
 function drawMatrix() {
     ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = '#00d9ff';
     ctx.font = fontSize + 'px monospace';
 
     for (let i = 0; i < drops.length; i++) {
+        // Efecto de parpadeo aleatorio en cascada
+        if (Math.random() > 0.98) {
+            brightness[i] = Math.random() * 0.5 + 0.5; // Entre 0.5 y 1
+        } else {
+            brightness[i] = Math.max(0.3, brightness[i] - 0.03); // Fade suave
+        }
+
+        // Color cyan con opacidad variable
+        const alpha = brightness[i];
+        ctx.fillStyle = `rgba(0, 217, 255, ${alpha})`;
+
         const char = chars[Math.floor(Math.random() * chars.length)];
         ctx.fillText(char, i * fontSize, drops[i] * fontSize);
 
