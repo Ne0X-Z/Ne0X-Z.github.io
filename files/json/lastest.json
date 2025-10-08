@@ -1,0 +1,75 @@
+{
+  "writeups": [
+    {
+      "id": 1,
+      "title": "HackTheBox - Imagery",
+      "description": "Análisis completo de vectores de ataque, enumeración de servicios, explotación de vulnerabilidades web y técnicas de escalada de privilegios en sistemas Linux.",
+      "icon": "box",
+      "tags": ["Linux", "Medium", "Web Security"],
+      "difficulty": "Medium",
+      "platform": "HackTheBox",
+      "link": "#",
+      "date": "2024-10-01",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "title": "HackTheBox - Puppy",
+      "description": "Exploración de vulnerabilidades en aplicaciones web, inyección SQL, bypass de autenticación y post-explotación en entornos Linux.",
+      "icon": "info",
+      "tags": ["Linux", "Easy", "SQL Injection"],
+      "difficulty": "Easy",
+      "platform": "HackTheBox",
+      "link": "#",
+      "date": "2024-09-15",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "title": "Próximamente",
+      "description": "Nuevos writeups de plataformas como HackTheBox, TryHackMe y desafíos de CTF. Mantente atento a las actualizaciones del portafolio.",
+      "icon": "clock",
+      "tags": ["Coming Soon"],
+      "difficulty": null,
+      "platform": "Various",
+      "link": null,
+      "date": null,
+      "status": "coming_soon"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Introducción a OSINT",
+      "description": "Fundamentos de inteligencia de fuentes abiertas, metodologías de investigación y herramientas esenciales para la recopilación de información.",
+      "icon": "search",
+      "tags": ["OSINT", "Tutorial"],
+      "category": "Tutorial",
+      "link": "#",
+      "date": "2024-08-20",
+      "readTime": "10 min"
+    },
+    {
+      "id": 2,
+      "title": "Fundamentos de Pentesting",
+      "description": "Guía completa sobre metodologías de pruebas de penetración, fases del pentesting y mejores prácticas en evaluaciones de seguridad.",
+      "icon": "lock",
+      "tags": ["Pentesting", "Beginner"],
+      "category": "Guide",
+      "link": "#",
+      "date": "2024-08-05",
+      "readTime": "15 min"
+    },
+    {
+      "id": 3,
+      "title": "Mi Setup de Hacking",
+      "description": "Configuración detallada de mi entorno de trabajo, herramientas de seguridad, scripts personalizados y recursos técnicos utilizados.",
+      "icon": "terminal",
+      "tags": ["Tools", "Setup"],
+      "category": "Resource",
+      "link": "#",
+      "date": "2024-07-18",
+      "readTime": "8 min"
+    }
+  ]
+}
