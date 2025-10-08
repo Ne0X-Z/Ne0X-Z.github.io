@@ -1,0 +1,36 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo negro -->
+  <rect width="32" height="32" fill="#0a0a0a" rx="4"/>
+  
+  <!-- Borde azul con glow -->
+  <rect width="32" height="32" fill="none" stroke="#00d9ff" stroke-width="1.5" rx="4" filter="url(#glow)"/>
+  
+  <!-- Terminal prompt ">" -->
+  <path d="M 10 12 L 16 16 L 10 20" 
+        stroke="#00d9ff" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  
+  <!-- Underscore cursor "_" -->
+  <line x1="18" y1="20" x2="24" y2="20" 
+        stroke="#00d9ff" 
+        stroke-width="2" 
+        stroke-linecap="round">
+    <animate attributeName="opacity" 
+             values="1;0;1" 
+             dur="1s" 
+             repeatCount="indefinite"/>
+  </line>
+</svg>
