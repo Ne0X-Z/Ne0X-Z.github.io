@@ -88,12 +88,24 @@ body {
   margin-right: auto;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
 }
 
 .profile-img svg {
   width: 60%;
   height: 60%;
   fill: var(--accent);
+}
+
+/* Agrega esto para la imagen */
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .profile h1 {
