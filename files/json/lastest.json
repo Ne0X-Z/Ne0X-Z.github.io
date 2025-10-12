@@ -1,0 +1,54 @@
+{
+  "writeups": [
+    {
+      "id": 1,
+      "title": "HackTheBox - eagery",
+      "description": "Análisis completo de vectores de ataque, enumeración de servicios, explotación de vulnerabilidades web y técnicas de escalada de privilegios en sistemas Linux.",
+      "icon": "box",
+      "tags": ["Linux", "Medium", "Web Security"],
+      "difficulty": "Medium",
+      "platform": "HackTheBox",
+      "link": "#",
+      "date": "2024-10-01",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "title": "HackTheBox - Puppy",
+      "description": "Exploración de vulnerabilidades en aplicaciones web, inyección SQL, bypass de autenticación y post-explotación en entornos Linux.",
+      "icon": "info",
+      "tags": ["Linux", "Easy", "SQL Injection"],
+      "difficulty": "Easy",
+      "platform": "HackTheBox",
+      "link": "#",
+      "date": "2024-09-15",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "title": "Próximamente",
+      "description": "Nuevos writeups de plataformas como HackTheBox, TryHackMe y desafíos de CTF. Mantente atento a las actualizaciones del portafolio.",
+      "icon": "clock",
+      "tags": ["Coming Soon"],
+      "difficulty": null,
+      "platform": "Various",
+      "link": null,
+      "date": null,
+      "status": "coming_soon"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Próximamente",
+      "description": "Iré documentando mis experiencias y aprendizajes en el mundo del hacking y la ciberseguridad.",
+      "icon": "clock",
+      "tags": ["Coming Soon"],
+      "category": "Tutorial",
+      "link": "#",
+      "date": "2024-08-20",
+      "readTime": "10 min",
+      "status": "coming_soon"
+    }
+  ]
+}

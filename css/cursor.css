@@ -1,0 +1,51 @@
+/* Custom Cursor - Estilo Flash con estela */
+.cursor {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: border-color 0.5s ease, transform 0.15s ease,
+    border-width 0.15s ease;
+  mix-blend-mode: screen;
+  background: var(--accent);
+  box-shadow: 0 0 15px var(--accent), 0 0 30px var(--glow-color);
+  transform: translate(-50%, -50%);
+}
+
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, var(--glow-color) 0%, transparent 70%);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: background 0.5s ease;
+  opacity: 0.6;
+  transform: translate(-50%, -50%);
+}
+
+/* Animación del ripple al hacer click */
+@keyframes ripple {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
+
+/* Ocultar cursor en móviles */
+@media (max-width: 768px) {
+  .cursor,
+  .cursor-glow {
+    display: none !important;
+  }
+}
