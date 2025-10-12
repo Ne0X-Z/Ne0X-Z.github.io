@@ -10,8 +10,11 @@
       href="assets/icons/terminal_icon.svg"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cursor.css" />
+    <!-- Aplicar tema guardado inmediatamente -->
+    <script src="js/theme-init.js"></script>
   </head>
-  <body>
+  <body class="theme-locked">
     <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-glow"></div>
@@ -42,7 +45,7 @@
             </a>
           </li>
           <li>
-            <a href="#about">
+            <a href="about.html">
               <span class="nav-icon">
                 <svg viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="10"></circle>
@@ -141,20 +144,38 @@
     <main class="main-content">
       <!-- Hero Section -->
       <section class="hero">
-        <h2>Bienvenido a mi portafolio</h2>
-        <p>
-          Estudiante de Ingeniería de Software especializado en ciberseguridad.
-          Aquí comparto writeups de CTF, proyectos de pentesting y conocimientos
-          técnicos adquiridos en mi camino profesional.
-        </p>
-        <div class="hero-cta">
-          <a href="#writeups" class="btn">
-            Explorar Writeups
-            <svg viewBox="0 0 24 24">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
+        <canvas id="mirrorCanvas" class="scanner-background"></canvas>
+        <div id="mirrorQuestion" class="mirror-question">
+          <h3>IDENTIFICA TU CAMINO</h3>
+          <p>¿Qué tipo de hacker eres?</p>
+          <div class="mirror-choices">
+            <button class="mirror-btn red-team" data-type="red">
+              <span>🔴 RED TEAM</span>
+              <small>Atacar · Explorar · Penetrar</small>
+            </button>
+            <button class="mirror-btn blue-team" data-type="blue">
+              <span>🔵 BLUE TEAM</span>
+              <small>Defender · Proteger · Monitorear</small>
+            </button>
+          </div>
+        </div>
+        <div class="hero-content" id="heroContent" style="opacity: 0">
+          <h2>Bienvenido a mi portafolio</h2>
+          <p>
+            Estudiante de Ingeniería de Software especializado en
+            ciberseguridad. Aquí comparto writeups de CTF, proyectos de
+            pentesting y conocimientos técnicos adquiridos en mi camino
+            profesional.
+          </p>
+          <div class="hero-cta">
+            <a href="#writeups" class="btn">
+              Explorar Writeups
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -299,6 +320,10 @@
     </main>
 
     <script src="js/cursor.js"></script>
+    <script src="js/theme-selector.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/card-effects.js"></script>
     <script src="js/content-loader.js"></script>
   </body>
 </html>

@@ -66,7 +66,7 @@ function createBlogCard(blog) {
     </div>
   `;
 
-    if (blog.link) {
+    if (blog.link && blog.status !== 'coming_soon') {
         card.style.cursor = 'pointer';
         card.addEventListener('click', () => {
             window.location.href = blog.link;
