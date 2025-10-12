@@ -183,7 +183,6 @@ body.theme-selected {
   stroke-linejoin: round;
 }
 
-/* Social Links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -201,7 +200,7 @@ body.theme-selected {
   justify-content: center;
   border-radius: 8px;
   background: var(--glow-color);
-  color: var(--text-secondary);
+  color: var(--accent);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -209,11 +208,12 @@ body.theme-selected {
 .social-links a svg {
   width: 20px;
   height: 20px;
-  stroke: currentColor;
+  stroke: #ffffff;
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transition: stroke 0.3s ease;
 }
 
 .social-links a:hover {
@@ -222,6 +222,9 @@ body.theme-selected {
   transform: translateY(-3px);
 }
 
+.social-links a:hover svg {
+  stroke: var(--bg-primary);
+}
 /* Main Content */
 .main-content {
   margin-left: var(--sidebar-width);
