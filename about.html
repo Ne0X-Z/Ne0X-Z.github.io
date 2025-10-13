@@ -9,15 +9,14 @@
       type="image/svg+xml"
       href="assets/icons/terminal_icon.svg"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/cursor.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
   </head>
   <body>
-    <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-glow"></div>
 
-    <!-- Sidebar (igual que en index.html) -->
     <aside class="sidebar">
       <div class="profile">
         <div class="profile-img">
@@ -105,67 +104,109 @@
       </nav>
 
       <div class="social-links">
-        <a href="https://github.com/Ne0X-Z" title="GitHub" class="icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+        <a href="https://github.com/Ne0X-Z" title="GitHub">
+          <svg viewBox="0 0 24 24">
             <path
               d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-            />
+            ></path>
           </svg>
         </a>
-
-        <a
-          href="https://www.linkedin.com/in/ne0xx-18a9152a7"
-          title="LinkedIn"
-          class="icon"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+        <a href="https://www.linkedin.com/in/ne0xx-18a9152a7" title="LinkedIn">
+          <svg viewBox="0 0 24 24">
             <path
               d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-            />
+            ></path>
             <rect x="2" y="9" width="4" height="12" />
             <circle cx="4" cy="4" r="2" />
           </svg>
         </a>
-
-        <a href="https://tryhackme.com/p/ne0X" title="TryHackMe" class="icon">
+        <a href="https://tryhackme.com/p/ne0X" title="TryHackMe">
           <img src="assets/icons/tryhackme.svg" alt="TryHackMe" />
         </a>
-
         <a
           href="https://app.hackthebox.com/profile/2067867"
           title="Hack The Box"
-          class="icon"
         >
           <img src="assets/icons/htb-icon.svg" alt="Hack The Box" />
         </a>
       </div>
     </aside>
 
-    <!-- Main Content -->
     <main class="main-content">
+      <section class="about-hero">
+        <div class="terminals-container">
+          <!-- Terminal 1: Top Left -->
+          <div class="terminal top-left">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-btn close"></span>
+                <span class="terminal-btn minimize"></span>
+                <span class="terminal-btn maximize"></span>
+              </div>
+              <div class="terminal-title">ne0x@kali:~$ sudo scan_skills.sh</div>
+            </div>
+            <div class="terminal-body" id="terminal1"></div>
+          </div>
+
+          <!-- Terminal 2: Top Right (with wave graph) -->
+          <div class="terminal top-right">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-btn close"></span>
+                <span class="terminal-btn minimize"></span>
+                <span class="terminal-btn maximize"></span>
+              </div>
+              <div class="terminal-title">
+                ne0x@kali:~$ ./analyze_wave_data.sh
+              </div>
+            </div>
+            <div class="terminal-body graph-body">
+              <canvas id="waveCanvas" width="500" height="250"></canvas>
+            </div>
+          </div>
+
+          <!-- Terminal 3: Bottom (full width) -->
+          <div class="terminal bottom">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-btn close"></span>
+                <span class="terminal-btn minimize"></span>
+                <span class="terminal-btn maximize"></span>
+              </div>
+              <div class="terminal-title">ne0x@kali:~$ system_status --all</div>
+            </div>
+            <div class="terminal-body" id="terminal3"></div>
+          </div>
+        </div>
+
+        <div class="hero-dim" aria-hidden="true"></div>
+
+        <!-- About Overlay -->
+        <div class="about-overlay">
+          <div class="section-header">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="section-subtitle">
+              Conoce más sobre mi trayectoria y habilidades
+            </p>
+          </div>
+          <div class="about-content">
+            <p>
+              Soy un estudiante de Ingeniería de Software con una gran pasión
+              por la ciberseguridad. Me especializo en pruebas de penetración,
+              análisis de vulnerabilidades y resolución de desafíos CTF.
+            </p>
+            <p>
+              Mi experiencia incluye trabajo con plataformas como HackTheBox,
+              TryHackMe y experimentación en laboratorios de seguridad
+              informática locales. Me fascina el mundo del hacking ético y la
+              protección de sistemas.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">Sobre Mí</h2>
-          <p class="section-subtitle">
-            Conoce más sobre mi trayectoria y habilidades
-          </p>
-        </div>
-
-        <div class="about-content">
-          <p>
-            Soy un estudiante de Ingeniería de Software con una gran pasión por
-            la ciberseguridad. Me especializo en pruebas de penetración,
-            análisis de vulnerabilidades y resolución de desafíos CTF.
-          </p>
-          <p>
-            Mi experiencia incluye trabajo con plataformas como HackTheBox,
-            TryHackMe y participación en competencias de seguridad informática.
-            Me fascina el mundo del hacking ético y la protección de sistemas.
-          </p>
-        </div>
-
-        <!-- Skills Grid -->
-        <div class="section-header" style="margin-top: 4rem">
+        <div class="section-header" style="margin-top: 6rem">
           <h2 class="section-title">Habilidades Técnicas</h2>
         </div>
 
@@ -177,8 +218,9 @@
               <span class="skill-tag">Nmap</span>
               <span class="skill-tag">Wireshark</span>
               <span class="skill-tag">OWASP Top 10</span>
-              <span class="skill-tag">SQL Injection</span>
-              <span class="skill-tag">XSS</span>
+              <span class="skill-tag">Binary Exploitation</span>
+              <span class="skill-tag">Password Cracking</span>
+              <span class="skill-tag">Pivoting</span>
             </div>
           </div>
 
@@ -188,6 +230,7 @@
               <span class="skill-tag">Python</span>
               <span class="skill-tag">JavaScript</span>
               <span class="skill-tag">Bash</span>
+              <span class="skill-tag">PowerShell</span>
               <span class="skill-tag">PHP</span>
               <span class="skill-tag">SQL</span>
             </div>
@@ -196,7 +239,7 @@
           <div class="skill-category">
             <h3>Sistemas & Redes</h3>
             <div class="skill-tags">
-              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">LinuX</span>
               <span class="skill-tag">Windows</span>
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">Active Directory</span>
@@ -204,7 +247,6 @@
           </div>
         </div>
 
-        <!-- Timeline -->
         <div class="section-header" style="margin-top: 4rem">
           <h2 class="section-title">Experiencia & Educación</h2>
         </div>
@@ -262,25 +304,21 @@
           </div>
         </div>
 
-        <!-- CTA Section -->
         <div class="cta-section" style="margin-top: 4rem">
           <h2>¿Interesado en colaborar?</h2>
           <p>
             Siempre estoy abierto a nuevos proyectos y oportunidades de
             aprendizaje. No dudes en contactarme.
           </p>
-          <div class="cta-buttons">
+          <div class="hero-cta">
             <a href="index.html#contact" class="btn">Contactar</a>
-            <a href="index.html#writeups" class="btn btn-secondary">
-              Ver Writeups
-            </a>
+            <a href="index.html#writeups" class="btn">Ver Writeups</a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Scripts -->
     <script src="js/cursor.js"></script>
-    <script src="js/theme-init.js"></script>
+    <script src="js/terminals.js"></script>
   </body>
 </html>
