@@ -2,30 +2,18 @@
   "writeups": [
     {
       "id": 1,
-      "title": "HackTheBox - eagery",
-      "description": "Análisis completo de vectores de ataque, enumeración de servicios, explotación de vulnerabilidades web y técnicas de escalada de privilegios en sistemas Linux.",
+      "title": "Conversor",
+      "description": "Explotación de Path Traversal para ejecución remota de código y escalada a root mediante vulnerabilidad CVE en needrestart.",
       "icon": "box",
-      "tags": ["Linux", "Medium", "Web Security"],
-      "difficulty": "Medium",
+      "tags": ["Linux", "Web Exploitation", "Arbitrary File Upload", "Path Traversal", "Needrestart CVE"],
+      "difficulty": "Easy",
       "platform": "HackTheBox",
-      "link": "#",
-      "date": "2024-10-01",
-      "status": "completed"
+      "link": "writeups/conversor.html",
+      "date": "2025-11-04",
+      "status": "Completed"
     },
     {
       "id": 2,
-      "title": "HackTheBox - Puppy",
-      "description": "Exploración de vulnerabilidades en aplicaciones web, inyección SQL, bypass de autenticación y post-explotación en entornos Linux.",
-      "icon": "info",
-      "tags": ["Linux", "Easy", "SQL Injection"],
-      "difficulty": "Easy",
-      "platform": "HackTheBox",
-      "link": "#",
-      "date": "2024-09-15",
-      "status": "completed"
-    },
-    {
-      "id": 3,
       "title": "Próximamente",
       "description": "Nuevos writeups de plataformas como HackTheBox, TryHackMe y desafíos de CTF. Mantente atento a las actualizaciones del portafolio.",
       "icon": "clock",

