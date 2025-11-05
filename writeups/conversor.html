@@ -669,7 +669,7 @@
             />
           </div>
           <div class="image-caption">
-            Imagen 23: Exploit alternativo que no requiere compilación
+            Imagen 23: Exploit que requiere compilación
           </div>
 
           <h3>Explotación de needrestart</h3>
@@ -797,11 +797,11 @@
               Nota Importante
             </div>
             <p>
-              La primera vez que ejecutemos <code>needrestart</code>,
+              La primera vez que ejecutemos <code>main.py</code>,
               recibiremos una reverse shell como nuestro usuario actual (no como
               root). Simplemente cerramos esa shell con Ctrl+C y ejecutamos
               <code>needrestart</code>
-              nuevamente. Lo importante es que el script Python continúe
+              como root. Lo importante es que el script <code>main.py</code> continúe
               ejecutándose en segundo plano.
             </p>
           </div>
