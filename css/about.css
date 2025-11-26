@@ -20,14 +20,8 @@ body {
   color: var(--text-primary);
   overflow-x: hidden;
   line-height: 1.6;
-  cursor: none !important;
 }
 
-* {
-  cursor: none !important;
-}
-
-/* ==================== SIDEBAR ==================== */
 .sidebar {
   position: fixed;
   left: 0;

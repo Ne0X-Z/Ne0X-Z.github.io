@@ -20,11 +20,6 @@ body {
   color: var(--text-primary);
   overflow-x: hidden;
   line-height: 1.6;
-  cursor: none !important;
-}
-
-* {
-  cursor: none !important;
 }
 
 /* Sidebar */
@@ -817,4 +812,13 @@ body {
 
 .notification.error .notification-icon {
   stroke: #ff4444;
+}
+
+.no-scrollbar {
+  overflow-x: auto;       
+  -ms-overflow-style: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;           
 }
