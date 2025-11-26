@@ -20,7 +20,7 @@
       "tags": ["Linux", "XSS", "LFI", "Command Injection", "Charcol"],
       "difficulty": "Medium",
       "platform": "HackTheBox",
-      "link": "writeups/Imagery.html",
+      "link": "writeups/imagery.html",
       "date": "2025-11-26",
       "status": "Completed"
     },
