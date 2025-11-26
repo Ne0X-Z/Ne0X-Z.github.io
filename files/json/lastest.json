@@ -14,6 +14,18 @@
     },
     {
       "id": 2,
+      "title": "Imagery",
+      "description": "Abuso de XSS Injection para abusar de un LFI y command injection para obtener un RCE.",
+      "icon": "box",
+      "tags": ["Linux", "XSS", "LFI", "Command Injection", "Charcol"],
+      "difficulty": "Medium",
+      "platform": "HackTheBox",
+      "link": "writeups/Imagery.html",
+      "date": "2025-11-26",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
       "title": "Próximamente",
       "description": "Nuevos writeups de plataformas como HackTheBox, TryHackMe y desafíos de CTF. Mantente atento a las actualizaciones del portafolio.",
       "icon": "clock",
